@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">Datos Personales</string>
+    <string name="ecivil_prompt">Elige un estado civil</string>
+
+    <string name="formulario">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="edad">Edad</string>
+    <string name="genero">Género</string>
+    <string name="estadocivil">Estado Civil</string>
+    <string name="tienehijos">Tiene Hijos</string>
+    <string name="informacion">INFORMACIÓN</string>
+    <string name="resetear">RESETEAR</string>
+    <string name="introducenombre">Introduce tu nombre...</string>
+    <string name="introduceapellido">Introduce tus apellidos...</string>
+    <string name="introduceedad">Introduce tu edad...</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="casado">Casado</string>
+    <string name="separado">Separado</string>
+    <string name="viudo">Viudo</string>
+    <string name="otro">Otro</string>
+    <string name="no">No</string>
+    <string name="si">Sí</string>
+    <string name="reservado">Reservado para la información</string>
+
+
+
+
+
+    <string-array name="ecivil_array">
+        <item>Casado</item>
+        <item>Separado</item>
+        <item>Viudo</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

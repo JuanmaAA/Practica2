@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ecivil_prompt">Choose a civil status</string>
+    <string name="formulario">Form</string>
+    <string name="nombre">First Name</string>
+    <string name="apellidos">Last name</string>
+    <string name="edad">Age</string>
+    <string name="genero">Gender</string>
+    <string name="estadocivil">Civil Status</string>
+    <string name="tienehijos">Have sons?</string>
+    <string name="informacion">INFORMATION</string>
+    <string name="resetear">RESET</string>
+    <string name="introducenombre">First Name</string>
+    <string name="introduceapellido">Last Name</string>
+    <string name="introduceedad">Age</string>
+    <string name="hombre">Man</string>
+    <string name="mujer">Woman</string>
+    <string name="casado">Married</string>
+    <string name="separado">Divorcied</string>
+    <string name="viudo">Widower</string>
+    <string name="otro">Other</string>
+    <string name="no">No</string>
+    <string name="si">Yes</string>
+    <string name="reservado">Bookkeper for information</string>
+</resources>
