@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        datos.setText("Reservado para datos");
+        datos.setText("Reservado para la información personal");
         datos.invalidate();
 
     }
