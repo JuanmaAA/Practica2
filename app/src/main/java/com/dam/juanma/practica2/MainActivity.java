@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         Spinner civil = (Spinner) findViewById(R.id.spcivil);
         Switch hijos = (Switch)findViewById(R.id.switch1);
         TextView datos = (TextView)findViewById(R.id.tvinfo);
+        
 
         nombre.setText("");
         apellidos.setText("");
