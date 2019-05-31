@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvformulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/formulario"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvnombre"
+                            android:layout_width="192dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:autoText="false"
+                            android:text="Nombre"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvapellidos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Apellidos"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvedad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Edad"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvgenero"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Género"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Indroduce tu nombre..."
+                            android:inputType="textPersonName"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etApellidos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ems="10"
+                            android:hint="Introduce tus apellidos..."
+                            android:inputType="textPersonName"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etEdad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:hint="Introduce tu edad..."
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textSize="14sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rgGenero"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp">
+
+                            <RadioButton
+                                android:id="@+id/rbHombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hombre" />
+
+                            <RadioButton
+                                android:id="@+id/rbMujer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mujer" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="187dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="-10dp"
+                            android:text="Estado Civil"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spcivil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:addStatesFromChildren="false"
+                            android:entries="@array/ecivil_array"
+                            android:prompt="@array/ecivil_array" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="425dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="-200px"
+                            android:layout_weight="1"
+                            android:text="Tiene hijos"
+                            android:textSize="18sp" />
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="65dp"
+                            android:textOff="No"
+                            android:textOn="Sí" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="277dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btinfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="getInformacion"
+                            android:text="Información" />
+
+                        <Button
+                            android:id="@+id/btreset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="reseteaInformacion"
+                            android:text="Resetear" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/tvinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="-120dp"
+                        android:layout_marginBottom="-50dp"
+                        android:text="@string/reservado"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
